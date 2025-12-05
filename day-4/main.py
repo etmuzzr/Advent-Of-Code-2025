@@ -37,3 +37,12 @@ print(res)
 # PART 2
 #===========
 
+with open('input.txt') as grid:
+    grid = [row[:-1] for row in grid.readlines()]
+
+dirs = [(1,0), (-1,0), (0,1), (0,-1), (1, 1), (-1, 1), (1, -1), (-1, -1)]
+
+n = len(grid)
+m = len(grid[0])
+res = 0
+
